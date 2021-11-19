@@ -45,6 +45,8 @@ ft_lstclear.c \
 ft_lstiter.c \
 ft_lstmap.c \
 
+MAIN = main.c
+
 OBJ = $(SRC:.c=.o)
 
 OBJ_BONUS = $(BONUS_SRC:.c=.o)
@@ -68,6 +70,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(ARCHIVE) $(NAME) $(OBJ)
 
+main: all
+	$(CC) $(CFLAGS) $(MAIN) $(NAME)
+
 bonus:
 	make WITH_BONUS=1
 
@@ -79,4 +84,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re bonus main
