@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   ft_strlcat.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: scristia <scristia@student.codam.nl>         +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2021/12/17 17:07:48 by scristia      #+#    #+#                 */
+/*   Updated: 2021/12/17 17:07:49 by scristia      ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static void	ft_strcpy(char *dst, const char *src, size_t dstsize)
