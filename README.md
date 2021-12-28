@@ -1,2 +1,2 @@
-scristia@codam.nl
-2021
+Hi and welcome to my first CODAM project.
+One day I hope I will organize this mess.
